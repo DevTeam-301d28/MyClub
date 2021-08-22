@@ -1,0 +1,34 @@
+.c-ProfileSection {
+  min-height: 100vh;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.c-ProfileSection__background {
+  width: 100%;
+}
+.c-ProfileSection__content {
+  min-width: 500px;
+}
+
+@media only screen and (max-width: 550px) {
+  .c-ProfileSection {
+    font-size: 19px;
+  }
+  .c-ProfileSection__title {
+    font-size: 2.8em;
+  }
+  .c-ProfileSection__content {
+    min-width: unset;
+  }
+}
+
+.c-HeroSection__title {
+  margin-bottom: 15px;
+  font-size: 2.5em;
+  font-family: "Montserrat", sans-serif;
+}

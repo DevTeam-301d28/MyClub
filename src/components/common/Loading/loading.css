@@ -1,0 +1,33 @@
+.image-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      bottom: 0;
+      background-color: #fff; 
+      z-index: 999999;
+      text-align: center;
+  }
+  
+  .image-holder {
+      position:absolute;
+      left: 50%; 
+      top: 50%;
+      width: 30px;
+      height: 30px;
+  }
+  
+  .image-holder img 
+  {
+      width: 320%;
+      margin-left: -49%;
+      margin-top: -50%;   
+  }
+  .image-holder div 
+  {
+      width: 320%;
+      margin-left: -49%;
+      margin-top: -50%;   
+  }

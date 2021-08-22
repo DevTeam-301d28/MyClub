@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;500;700&display=swap');
+:root {
+  --primary-colour-1: #D9D9D9;
+  --primary-colour-2: #F29F05;
+  --primary-colour-3: #F2B705;
+  --primary-colour-4: #F2CB05;
+  --primary-font-colour: #2c3e50;
+  --secondary-font-colour: #D9D9D9;
+}
+
+html {
+  font-family: 'Karla', sans-serif;}
+
+* {
+  box-sizing: border-box;
+  color: var(--primary-font-colour);
+  margin: 0px;
+  padding: 0px;
+  letter-spacing: 1px;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+body {
+  background-color: var(--secondary-font-colour);
+}
+
+.opacity-0 {
+  opacity: 0;
+}
+
+.opacity-1 {
+  opacity: 1;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-align-ctr {
+  align-items: center;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.flex-center {
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-space-btw {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex-space-around {
+  align-items: center;
+  justify-content: space-around;
+}
+
+.pos-abs {
+  position: absolute;
+}
+
+.pos-rel {
+  position: relative;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.h-full {
+  height: 100%;
+}
+
+
+@media screen and (max-width: 1200px) {
+  section {
+    padding: 0px 50px;
+  }
+}
+
+@media screen and (max-width: 424px) {
+  section {
+    padding: 0px 20px;
+  }
+}

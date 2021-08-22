@@ -1,0 +1,12 @@
+header {
+  height: 80px;
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+  background-color: var(--secondary-font-colour);
+  transition: 0.2s;
+}
+
+.App {
+  overflow: hidden;
+}
