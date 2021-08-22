@@ -14,9 +14,7 @@ class Explore extends Component {
             <Container>
               <Row>
                 <Col>
-                  <h1 className="c-HeroSection__title">
-                        Explore Section !
-                  </h1>
+                
                 </Col>
               </Row>
             </Container>
