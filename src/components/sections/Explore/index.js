@@ -3,7 +3,7 @@ import { Element } from 'react-scroll';
 import './HeroSection.css';
 import ScrollOnView from '../../common/ScrollOnView';
 import { withAuth0 } from '@auth0/auth0-react';
-import {Container,Row,Col} from 'react-bootstrap';
+import {Container,Row} from 'react-bootstrap';
 class Explore extends Component {
   render() {
     return (
@@ -13,9 +13,7 @@ class Explore extends Component {
           <ScrollOnView reverse>
             <Container>
               <Row>
-                <Col>
 
-                </Col>
               </Row>
             </Container>
           </ScrollOnView>
