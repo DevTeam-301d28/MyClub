@@ -14,7 +14,7 @@ class Explore extends Component {
             <Container>
               <Row>
                 <Col>
-                
+
                 </Col>
               </Row>
             </Container>
