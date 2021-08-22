@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import './HeroSection.css';
 import {Container,Row,Col} from 'react-bootstrap';
 import { withAuth0 } from '@auth0/auth0-react';
+import SportModal from './Modal/SportModal';
 
 const variants = {
   hidden: { opacity: 0, y: -200 },
@@ -29,6 +30,7 @@ class Welcome extends Component {
                 <p className="c-HeroSection__paragraph">
          select your favorite team
                 </p>
+                <SportModal/>
               </motion.div>
             </section>
           </Col>

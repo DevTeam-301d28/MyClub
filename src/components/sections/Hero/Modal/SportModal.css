@@ -1,0 +1,53 @@
+
+.fav-teams{
+    margin:5px ;
+    box-sizing: content-box;
+    font-family:monospace;
+    }
+    
+    .card-img{
+      width: 350px;
+      height:250px;
+      border-radius: 15%;
+    }
+    
+    body{
+      display: block;
+      box-sizing: content-box
+     }
+    
+     
+     .col{
+      float: left;
+      display: flex;
+    }
+    .modal-body::after {
+      content: "";
+      clear: both;
+      display: table;
+      padding:10px
+    }
+    
+    .modal-content{
+      align-items: center;
+      justify-content: space-between;
+      background:rgb(255, 245, 245);
+      
+    }
+    .modalbutton{
+      background-color:red;
+      float: right;
+     
+    }
+    .modal-title{
+      padding: 20px;
+      align-items: center;
+      font-size: 40px;
+      font-weight: 400;
+      color: rgb(48, 47, 47);
+      padding-right: 30px;
+      font-family:monospace;
+    }
+    .modal-header{
+      padding-left: 20px;
+    }

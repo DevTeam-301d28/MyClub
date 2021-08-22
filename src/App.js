@@ -13,9 +13,10 @@ import Team from './components/sections/Team';
 import Players from 'components/sections/Players';
 import Events from 'components/sections/Events';
 import Explore from 'components/sections/Explore';
+import SportModal from 'components/sections/Hero/Modal/SportModal'
 class App extends React.Component {
   render() {
-    console.log( 'app', this.props );
+    console.log('app', this.props);
     return (
       <>
         <Router>
@@ -23,18 +24,19 @@ class App extends React.Component {
             <Switch>
               {this.props.auth0.isAuthenticated ?
                 <WindowSizeProvider>
+                  <SportModal />
                   <div className="App">
                     <NavBar />
                     <main>
                       <Route exact path='/'>
-                        <Welcome/>
+                        <Welcome />
                         <Team />
-                        <Players/>
-                        <Events/>
-                        <Explore/>
+                        <Players />
+                        <Events />
+                        <Explore />
                       </Route>
                       <Route exact path='/profile'>
-                        <Profile/>
+                        <Profile />
                       </Route>
                     </main>
                   </div>
@@ -48,5 +50,5 @@ class App extends React.Component {
     );
   }
 }
-export default withAuth0( App );
+export default withAuth0(App);
 
