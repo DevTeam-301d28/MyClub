@@ -1,0 +1,28 @@
+.c-NavLink {
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 18px;
+  margin-left: 80px;
+  z-index: 111;
+}
+
+.c-NavLink__text:hover {
+  color: var(--primary-colour-3);
+}
+
+@media screen and (max-width: 900px) {
+  .c-NavLink {
+    font-size: 35px;
+    margin: unset;
+    margin-bottom: 50px;
+    font-weight: bold;
+  }
+
+  .c-NavLink__text {
+    color: var(--secondary-font-colour);
+  }
+
+  .c-NavLink__text:hover {
+    color: unset;
+  }
+}

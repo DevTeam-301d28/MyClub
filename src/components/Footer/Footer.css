@@ -1,0 +1,16 @@
+footer {
+  font-size: 1em;
+  text-align: center;
+  box-shadow: 0 -5px 10px -10px var(--primary-font-colour);
+  background-color: var(--secondary-font-colour);
+}
+
+footer > div {
+  padding: 40px;
+}
+
+@media screen and (max-width: 550px) {
+  footer {
+    font-size: 15px;
+  }
+}

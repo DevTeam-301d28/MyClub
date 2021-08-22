@@ -1,0 +1,22 @@
+.c-NavLogo {
+  cursor: pointer;
+  font-size: 22px;
+  font-weight: bold;
+}
+.c-NavLogo img {
+ width: 10%;
+
+}
+.c-NavLogo > h1 {
+  font-size: 20px;
+}
+
+.c-NavLogo__accent {
+  color: var(--primary-colour-3);
+}
+
+@media screen and (max-width: 400px) {
+  .c-NavLogo {
+    font-size: 17px;
+  }
+}

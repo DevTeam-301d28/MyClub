@@ -1,0 +1,33 @@
+.c-HeroSection {
+  min-height: 100vh;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+.c-HeroSection__background {
+  width: 100%;
+}
+.c-HeroSection__content {
+  min-width: 500px;
+}
+.c-HeroSection__title {
+  margin-bottom: 15px;
+  font-size: 2.5em;
+  font-family: "Montserrat", sans-serif;
+}
+@media only screen and (max-width: 550px) {
+  .c-HeroSection {
+    font-size: 19px;
+  }
+  .c-HeroSection__title {
+    font-size: 2.8em;
+  }
+  .c-HeroSection__content {
+    min-width: unset;
+  }
+}
+
+
