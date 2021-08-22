@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useState,useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { GiHamburgerMenu } from 'react-icons/gi';
@@ -19,6 +20,7 @@ const MainNavBar = () => {
     { linkText: 'logout', element: 'scrollTologout' }
   ];
   const [isMobileOpen, setIsMobileOpen] = useState( false );
+  // eslint-disable-next-line no-unused-vars
   const [isProfileOpen, setProfileOpen] = useState( false );
   const [arrayOflinks, setarrayOflinks] = useState( Homelinks );
 
@@ -37,19 +39,14 @@ const MainNavBar = () => {
       },
     },
   };
-
-
-
-
-
-
   useEffect( () => {
     console.log( );
     if ( window.location.pathname === '/profile' ){
-      console.log( isProfileOpen );
+
       setarrayOflinks( ViewsLinks );
     }
-  }, [] );
+  }, [ViewsLinks] );
+
 
 
   return (

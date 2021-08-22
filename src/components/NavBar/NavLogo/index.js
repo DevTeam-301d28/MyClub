@@ -1,4 +1,4 @@
-import React ,{ useState,useEffect } from 'react';
+import React ,{ useState} from 'react';
 import { motion } from 'framer-motion';
 import { animateScroll as scroll } from 'react-scroll';
 import './NavLogo.css';
@@ -7,7 +7,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { useAuth0, withAuth0 } from '@auth0/auth0-react';
 
 import {
-
   UncontrolledDropdown,
   DropdownToggle,
   DropdownItem,
@@ -21,16 +20,11 @@ const NavLogo = ( { linkClicked,profileClicked } ) => {
   const scrollToTop = () => {
     linkClicked();
     scroll.scrollToTop();
-
     if ( window.location.pathname === '/profile' ){
       setProfileOpen( true );
     }
   };
 
-
-  useEffect( () => {
-
-  }, [] );
   const { logout } = useAuth0();
   return (
     <motion.div
