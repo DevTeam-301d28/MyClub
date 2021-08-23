@@ -27,6 +27,7 @@ class SportModal extends Component {
       user: this.props.userdata,
     };
   }
+ 
 
   handleChange = ( event ) => {
     const { name, value } = event.target;
@@ -36,34 +37,15 @@ class SportModal extends Component {
   };
 
   handleSubmit = ( e ) => {
+    console.log ( this.props.userdata._id ) ;
     e.preventDefault();
     const { nickname, favouriteleague, favTeamName,selectedSport } = this.state;
-    //     alert( `Your registration detail: \n
-    //              nickname: ${nickname} \n
-    //              favouriteLeague: ${favouriteleague} \n
-    //              selectedSport: ${selectedSport} \n
-    //              favTeam: ${favTeamName}` );
-    //     let test = {
-    //       'nickname': '000000000',
-    //       'favouriteleague' : '000000000',
-    //       'favTeamName' : '000000000' ,
-    //       'selectedSport': '00000000'
-
-    //     };
-    if ( this.props.auth0.isAuthenticated ) {
-      const config = {
-        method: 'patch',
-        baseURL: 'http://localhost:3050',
-        body: { nickname, favouriteleague, favTeamName,selectedSport } ,
-        url: `/updateUser/${this.state.user._id}`,
-      };
-      axios( config )
-        .then( ( response ) => {
-          console.log( response );
-        } ).catch( ( err ) => console.error( err ) );
-    }
-    this.handleClose();
-  };
+    
+    axios.patch( `http://localhost:3050/updateUser/${this.props.userdata._id}`,
+      {favTeamName,nickname,favouriteleague,selectedSport} )
+      .then( resp=>{
+        console.log( resp.data );
+      } );  };
 
   _next = () => {
     let currentStep = this.state.currentStep;
@@ -277,6 +259,7 @@ function Step2( props ) {
   return (
     <>
       <div className='form-group'>
+      
         <label>Select Your Favourite league & Team </label>
         <Row>
           <Col>
