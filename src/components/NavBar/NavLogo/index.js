@@ -1,4 +1,4 @@
-import React ,{ useState} from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { animateScroll as scroll } from 'react-scroll';
 import './NavLogo.css';
@@ -10,17 +10,16 @@ import {
   UncontrolledDropdown,
   DropdownToggle,
   DropdownItem,
-  DropdownMenu
+  DropdownMenu,
 } from 'reactstrap';
 
-
-const NavLogo = ( { linkClicked,profileClicked } ) => {
+const NavLogo = ( { linkClicked, profileClicked } ) => {
   const [isProfileOpen, setProfileOpen] = useState( false );
 
   const scrollToTop = () => {
     linkClicked();
     scroll.scrollToTop();
-    if ( window.location.pathname === '/profile' ){
+    if ( window.location.pathname === '/profile' ) {
       setProfileOpen( true );
     }
   };
@@ -34,33 +33,33 @@ const NavLogo = ( { linkClicked,profileClicked } ) => {
     >
       <UncontrolledDropdown nav>
         <DropdownToggle nav>
-          <span className="c-NavLogo" onClick={() => scrollToTop()}>
-          my<span className="c-NavLogo__accent">Club </span>
+          <span className='c-NavLogo' onClick={() => scrollToTop()}>
+            my<span className='c-NavLogo__accent'>Club </span>
           </span>
         </DropdownToggle>
         <DropdownMenu>
-          <DropdownItem hidden={isProfileOpen} to='/profile' onClick={() => profileClicked()} tag={Link}>
-                        Profile
+          <DropdownItem
+            hidden={isProfileOpen}
+            to='/profile'
+            onClick={() => profileClicked()}
+            tag={Link}
+          >
+            Profile
           </DropdownItem>
           <DropdownItem to='/fans-club' tag={Link}>
-                        FansClub
+            FansClub
           </DropdownItem>
           <DropdownItem to='/settings' tag={Link}>
-                        Settings
+            Settings
           </DropdownItem>
-          <DropdownItem onClick={() => logout( { returnTo: window.location.origin } )}>
-                        logout
+          <DropdownItem
+            onClick={() => logout( { returnTo: window.location.origin } )}
+          >
+            logout
           </DropdownItem>
         </DropdownMenu>
       </UncontrolledDropdown>
-
-
-
-
-
     </motion.div>
-
   );
 };
 export default withAuth0( NavLogo );
-

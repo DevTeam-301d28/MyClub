@@ -13,6 +13,7 @@
     "emailjs-com": "^2.6.4",
     "framer-motion": "^4.0.3",
     "headroom.js": "0.11.0",
+    "nodemon": "^2.0.12",
     "react": "^17.0.2",
     "react-bootstrap": "^1.5.1",
     "react-cookie": "4.0.3",

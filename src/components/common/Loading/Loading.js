@@ -5,14 +5,14 @@ import loading from 'components/assets/loading.gif';
 class Loading extends React.Component {
   render() {
     return this.props.auth0.isLoading ? (
-      <div class="image-container">
-        <p class="image-holder">
+      <div className="image-container">
+        <p className="image-holder">
           <img src={loading} alt='loading ...' />
         </p>
       </div>
     ) : this.props.auth0.error ? (
-      <div class="image-container">
-        <p class="image-holder">
+      <div className="image-container">
+        <p className="image-holder">
           <img src={loading} alt='loading ...' />
           <div >Oops... {this.props.auth0.error.message}</div>
         </p>
