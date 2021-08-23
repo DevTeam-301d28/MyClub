@@ -51,7 +51,7 @@
     ],
     "eol-last": "error",
     "no-var": "error",
-    "camelcase": 0,
+    "camelcase": 1,
     "space-in-parens": [
       "error",
       "always"

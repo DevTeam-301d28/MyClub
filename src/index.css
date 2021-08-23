@@ -34,21 +34,12 @@ body {
   background-color: var(--secondary-font-colour);
 }
 
-.opacity-0 {
-  opacity: 0;
-}
-
-.opacity-1 {
-  opacity: 1;
-}
 
 .flex {
   display: flex;
 }
 
-.flex-align-ctr {
-  align-items: center;
-}
+
 
 .flex-col {
   flex-direction: column;
@@ -62,23 +53,6 @@ body {
 .flex-space-btw {
   align-items: center;
   justify-content: space-between;
-}
-
-.flex-space-around {
-  align-items: center;
-  justify-content: space-around;
-}
-
-.pos-abs {
-  position: absolute;
-}
-
-.pos-rel {
-  position: relative;
-}
-
-.w-full {
-  width: 100%;
 }
 
 .h-full {
