@@ -45,6 +45,7 @@
         "builtinGlobals": true
       }
     ],
+    
     "semi": [
       2,
       "always"
